@@ -1,11 +1,11 @@
 package com.llimadev.bank.model;
 
 public class Account {
-    private int accountNumber;
+    private final int accountNumber;
     private double balance;
-    private Customer customer;
+    private final Customer customer;
 
-    public Account(int accountNumber, double balance, Customer customer) {
+    public Account(int accountNumber, double balance,  Customer customer) {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customer = customer;
@@ -25,8 +25,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account number: " + accountNumber +
-                "\n Balance: " + balance +
-                "\n Customer: " + customer;
+        return "\nAccount number: " + accountNumber +
+                "\nBalance: " + balance;
     }
 }
