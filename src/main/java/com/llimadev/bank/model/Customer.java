@@ -1,9 +1,9 @@
 package com.llimadev.bank.model;
 
 public class Customer {
-    private String name;
-    private String email;
-    private String password;
+    private final String name;
+    private final String email;
+    private final String password;
 
     public Customer(String name, String email, String password) {
         this.name = name;
